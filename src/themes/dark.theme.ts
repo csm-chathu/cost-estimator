@@ -88,6 +88,9 @@ export default createTheme({
       muted: "#64748B",
       inverted: "#0D0B24",
     },
+    optional:{
+      main:'#540617'
+    }
   },
   typography: {
     fontFamily: "Plus Jakarta Sans,sans-serif",
