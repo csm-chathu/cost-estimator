@@ -97,7 +97,10 @@ export function generateBodyContent(req:any){
 </html> `;
 }
 
-export function generateContent( params:any ){
+export function generateContent( params:any ,req:any ){
+  let orgin=req?.headers?.origin || 'https://price-est.elifeamerica.com';
+  console.log(orgin);
+  
   const imageBuffer = readPublicLogo();
   return  `
   <html>
@@ -124,9 +127,18 @@ export function generateContent( params:any ){
 
   </div>
   <div style="width: 40%;height: inherit;color: #000;font-size: 13px;font-weight: 500; padding-top:30px ;text-align:left;padding-right:20px">
-    <p style="white-space: nowrap;">725 S, Orange Av, West Covina, CA 91790</p>
-    <p>626-338-8481</p>
-    <p>administration@westcovinamc.com</p>
+      <div style="display: flex;align-items: center;">
+        <Image src="${orgin}/address.png" height="20px" width="20px" style="margin-right: 10px;"></Image>
+        <p style="white-space: nowrap;">725 S, Orange Av, West Covina, CA 91790 </p>
+      </div>
+      <div style="display: flex;align-items: center;">
+        <Image src="${orgin}/phone.png" height="20px" width="20px" style="margin-right: 10px;"></Image>
+        <p>626-338-8481</p>
+      </div>
+      <div style="display: flex;align-items: center;">
+        <Image src="${orgin}/email.png" height="20px" width="20px" style="margin-right: 10px;"></Image>
+        <p>administration@westcovinamc.com</p>
+    </div>
   </div>
 
 </div>
@@ -237,7 +249,9 @@ export function generateContent( params:any ){
 }
 
 
-export async function generatePdf(params: any) {
+export async function generatePdf(params: any,req:any) {
+  console.log(req?.headers?.origin);
+  
   const browser = await puppeteer.launch({
     headless: true,
     args: ["--enable-gpu", "--no-sandbox", "--disable-setuid-sandbox"],
@@ -249,7 +263,7 @@ export async function generatePdf(params: any) {
     deviceScaleFactor: 1,
   });
   // const imageBuffer = readPublicLogo();
-  const customContent = generateContent( params );
+  const customContent = generateContent( params ,req );
 
   await page.setContent(customContent);
 
