@@ -123,7 +123,7 @@ export function generateContent( params:any ,req:any ){
  <div class="banner">
 
   <div style="width: 60%;height: inherit;">
-  <Image src=${imageBuffer} height="90px" width="400px" style="margin-top: 40px; margin-left: 20px;">
+  <Image src=${imageBuffer} height="80px" width="400px" style="margin-top: 40px; margin-left: 20px;">
 
   </div>
   <div style="width: 40%;height: inherit;color: #000;font-size: 13px;font-weight: 500; padding-top:30px ;text-align:left;padding-right:20px">
