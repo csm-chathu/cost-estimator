@@ -3,7 +3,8 @@ import moment from "moment";
 import { readPublicLogo  } from "../utils/imageRead";
 
 export function generateBodyContent(req:any){
-  let orgin=req?.headers?.origin || 'https://price-est.elifeamerica.com';
+  let orgin=req?.headers?.origin || process.env.DOMAIN;
+  
   return ` <html>
 <head>
     <style>
@@ -98,8 +99,7 @@ export function generateBodyContent(req:any){
 }
 
 export function generateContent( params:any ,req:any ){
-  let orgin=req?.headers?.origin || 'https://price-est.elifeamerica.com';
-  console.log(orgin);
+  let orgin=req?.headers?.origin || process.env.DOMAIN;
   
   const imageBuffer = readPublicLogo();
   return  `
