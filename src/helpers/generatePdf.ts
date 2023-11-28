@@ -49,7 +49,7 @@ export function generateBodyContent(req:any){
                         style="vertical-align:-webkit-baseline-middle; font-size:medium; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; letter-spacing: -0.1px;">
                         <tr>
                             <td>
-                                <img style="width: 320px; max-width: 320px; height: 60px; max-height: 75px;" alt="Logo" src="${orgin}/image1.png" align="center" width="180" height="85" alt="">
+                                <img style="width: 350px; max-width: 350px; height: 60px; max-height: 75px;" alt="Logo" src="${orgin}/image1.png" align="center" width="180" height="85" alt="">
                             </td>
                         <tr>
                         <tr>
@@ -81,13 +81,13 @@ export function generateBodyContent(req:any){
                         style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
                         <tr>
                             <td
-                                style="width:400px;  border-radius:14px 0 0 14px; overflow: hidden; background-color: #FFCAD6; vertical-align: middle; padding-left:20px;">
+                                style="width:450px;  border-radius:14px 0 0 14px; overflow: hidden; background-color: #FFCAD6; vertical-align: middle; padding-left:20px;">
                                 <p style="font-weight: 500; font-size: 22px;">The Best Medical Care for Our Community.</p>
                                 <a style="background-color: #000; font-size: 14px; color: #ffffff; padding: 5px 20px; text-decoration: none; border-radius: 100px;"
                                     href="https://westcovinamc.com/index.html" target="_blank">Visit our website</a>
                             </td>
                             <td
-                                style="width:280px; height: 168px;border-radius:0 14px 14px 0; overflow: hidden;  background-image: url('${orgin}/hospital.png'); background-size: 265px 168px; background-position: right;">
+                                style="width:300px; height: 170px;border-radius:0 14px 14px 0; overflow: hidden;  background-image: url('${orgin}/hospital.png'); background-size: 265px 168px; background-position: right;">
                             </td>
                         </tr>
                     </tbody>
