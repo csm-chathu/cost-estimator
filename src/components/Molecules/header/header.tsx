@@ -24,8 +24,7 @@ export default function Header() {
           component="img"
           sx={{
             height: 50,
-            width: 250,
-            mb: 2,
+            width: 280,
           }}
           src={"/" + img}
         />
