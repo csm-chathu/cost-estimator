@@ -84,7 +84,7 @@ export function generateBodyContent(req:any){
                                 style="width:450px;  border-radius:14px 0 0 14px; overflow: hidden; background-color: #FFCAD6; vertical-align: middle; padding-left:20px;">
                                 <p style="font-weight: 500; font-size: 22px;">The Best Medical Care for Our Community.</p>
                                 <a style="background-color: #000; font-size: 14px; color: #ffffff; padding: 5px 20px; text-decoration: none; border-radius: 100px;"
-                                    href="https://westcovinamc.com/index.html" target="_blank">Visit our website</a>
+                                    href="https://ladowntownmc.com/" target="_blank">Visit our website</a>
                             </td>
                             <td
                                 style="width:300px; height: 170px;border-radius:0 14px 14px 0; overflow: hidden;  background-image: url('${orgin}/hospital.png'); background-size: 265px 168px; background-position: right;">
@@ -154,7 +154,7 @@ export function generateContent( params:any ,req:any ){
     }</p>
   </div>
   <div style="width:40%;text-align:right">
-    <label style="color: #82889B;font-size: 15px;font-weight: 400;line-height: normal;padding-top: 10px;padding-bottom: 5px;">Prepared</label>
+    <label style="color: #82889B;font-size: 15px;font-weight: 400;line-height: normal;padding-top: 10px;padding-bottom: 5px;">Prepared On</label>
     <p style="color: black;font-size: 18px;font-weight: 500;line-height: normal;font-style: normal;white-space: nowrap;">${moment(
       new Date()
     ).format("MMMM Do YYYY")}</p>
@@ -165,10 +165,10 @@ export function generateContent( params:any ,req:any ){
     <p style="color:black;font-size:20;font-weight: 500;">Patient Details</p>
 </div>
 <div style="width: 100%;display: flex;border: 1px solid #CEDCF6;">
-  <div style="width: 50%;">
+  <div style="width: 30%;">
     <p style="color:#82889B;font-size:16;font-weight: 400;padding: 3px 10px;">Patient Name</p>
   </div>
-  <div style="width: 50%;">
+  <div style="width: 70%;">
     <p style="color:#020202;font-size:16;font-weight: 400;text-align: right;padding: 3px 10px;">${
       params?.contact?.Fname + " " + params?.contact?.Lname
     }</p>
@@ -177,10 +177,10 @@ export function generateContent( params:any ,req:any ){
 
   
 <div style="width: 100%;display: flex;border: 1px solid #CEDCF6;border-top: none;">
-  <div style="width: 50%;">
+  <div style="width: 30%;">
     <p style="color:#82889B;font-size:16;font-weight: 400;padding: 3px 10px;">Patient Plan</p>
   </div>
-  <div style="width: 50%;">
+  <div style="width: 70%;">
     <p style="color:#020202;font-size:16;font-weight: 400;text-align: right;padding: 3px 10px;">${
       params?.insurance?.insured || "N/A"
     }</p>
@@ -188,10 +188,10 @@ export function generateContent( params:any ,req:any ){
 </div>
 
 <div style="width: 100%;display: flex;border: 1px solid #CEDCF6;border-top: none;">
-  <div style="width: 50%;">
+  <div style="width: 30%;">
     <p style="color:#82889B;font-size:16;font-weight: 400;padding: 3px 10px;">Patient Phone Number</p>
   </div>
-  <div style="width: 50%;">
+  <div style="width: 70%;">
     <p style="color:#020202;font-size:16;font-weight: 400;text-align: right;padding: 3px 10px;">${
       params?.contact?.phone || "N/A"
     }</p>
@@ -199,10 +199,10 @@ export function generateContent( params:any ,req:any ){
 </div>
 
 <div style="width: 100%;display: flex;border: 1px solid #CEDCF6;border-top: none;">
-  <div style="width: 50%;">
+  <div style="width: 30%;">
     <p style="color:#82889B;font-size:16;font-weight: 400;padding: 3px 10px;">Patient Address</p>
   </div>
-  <div style="width: 50%;">
+  <div style="width: 70%;">
     <p style="color:#020202;font-size:16;font-weight: 400;text-align: right;padding: 3px 10px;">${
       params?.contact?.address1 +
       "," +
